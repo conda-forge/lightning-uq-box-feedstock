@@ -50,7 +50,8 @@ test:
   imports:
     - lightning_uq_box
   commands:
-    - pip check
+    # https://github.com/conda-forge/laplace-torch-feedstock/pull/3
+    # - pip check
     - uq-box --help
   requires:
     - pip
