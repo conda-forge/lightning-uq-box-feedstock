@@ -22,7 +22,7 @@ requirements:
     - setuptools >=61
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - einops >=0.3
     - lightning >=2.4
     - matplotlib-base >=3.5
@@ -39,7 +39,7 @@ requirements:
     - timm >=0.9.2
     - torchseg >=0.0.1a1
     - h5py >=3.12.1
-    - ema-pytorch >=0.7
+    - ema_pytorch >=0.7
 
     # Required by LightningCLI
     - jsonargparse >=4.27.7
