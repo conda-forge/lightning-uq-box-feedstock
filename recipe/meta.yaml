@@ -1,20 +1,20 @@
 {% set name = "lightning-uq-box" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 97d994ac5ecdfc5a31e8d256b827115664d615a7623a1eea024754a8d7c3187e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9a714ec771e5c7aa86fbe245a2b9485f2d49e44df506a9df37c262f91238cad3
 
 build:
   entry_points:
     - uq-box = lightning_uq_box.main:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
