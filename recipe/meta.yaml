@@ -42,8 +42,10 @@ requirements:
     - h5py >=3.12.1
     - ema_pytorch >=0.7
 
-    # Required by LightningCLI
+    # Required by LightningCLI (jsonargparse[signatures] extra)
     - jsonargparse >=4.28.0
+    - docstring_parser >=0.17
+    - typeshed-client >=2.8.2
     - omegaconf >=2.3
 
 test:
