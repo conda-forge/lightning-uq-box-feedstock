@@ -1,5 +1,5 @@
 {% set name = "lightning-uq-box" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9a714ec771e5c7aa86fbe245a2b9485f2d49e44df506a9df37c262f91238cad3
+  sha256: 4029effa2cd8e2aa61d521b65bd4e75ca5b7a8fa23be5b383806fbf8130f3075
 
 build:
   entry_points:
